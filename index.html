@@ -1,14 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modulo 4 indice</title>
-    <link rel="stylesheet" href="./style/estilo.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CHN Virtual</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: white;
+      display: flex;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .left {
+      flex: 1;
+      background: #001f4d;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+
+    .left img {
+      max-width: 80%;
+      height: auto;
+      border: 10px solid #333;
+      border-radius: 15px;
+    }
+
+    .right {
+      flex: 1;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .logo {
+      font-size: 36px;
+      font-weight: bold;
+      color: #002b5c;
+    }
+
+    .subtitle {
+      margin-top: 10px;
+      font-weight: 300;
+      color: #002b5c;
+      letter-spacing: 2px;
+    }
+
+    .welcome {
+      margin-top: 40px;
+      font-style: italic;
+      font-size: 18px;
+    }
+
+    .title {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .input-group {
+      margin: 20px 0;
+    }
+
+    input {
+      width: 60%;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-bottom: 1px solid #aaa;
+      outline: none;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .password-hint {
+      font-size: 12px;
+      color: #666;
+      margin-top: -5px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 25px;
+      font-size: 16px;
+      background-color: #002b5c;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #001f3f;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+      .left, .right {
+        flex: none;
+        width: 100%;
+      }
+      .left {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Pagina inicial</h1>
-    <a href="https://efgc.github.io/pagina2.html">Visit W3Schools.com!</a>
+  <div class="container">
+    <div class="left">
+      <img src="ebanking_mockup.png" alt="EBANKING"/>
+    </div>
+    <div class="right">
+      <div class="logo">BANCO CHN</div>
+      <div class="subtitle">CRÉDITO HIPOTECARIO NACIONAL</div>
+      <div class="welcome">Bienvenido a</div>
+      <div class="title">CHN Virtual</div>
+      <div class="input-group">
+        <input type="text" placeholder="Usuario" />
+      </div>
+      <div class="input-group">
+        <input type="password" placeholder="*" />
+        <div class="password-hint">Ingrese con el último password que recuerde</div>
+      </div>
+      <button>Iniciar Sesión</button>
+    </div>
+  </div>
 </body>
 </html>
