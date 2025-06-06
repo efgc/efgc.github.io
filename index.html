@@ -89,19 +89,21 @@
       margin-bottom: 20px;
     }
 
-    button {
-      padding: 10px 25px;
-      font-size: 16px;
-      background-color: #002b5c;
-      color: white;
-      border: none;
-      border-radius: 20px;
-      cursor: pointer;
-    }
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  font-size: 16px;
+  background-color: #002b5c;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
 
-    button:hover {
-      background-color: #001f3f;
-    }
+.btn:hover {
+  background-color: #001f3f;
+}
 
     @media (max-width: 768px) {
       body {
@@ -120,7 +122,7 @@
 <body>
   <div class="container">
     <div class="left">
-      <img src="ebanking_mockup.png" alt="EBANKING"/>
+      <img src="imagen.png" alt="EBANKING"/>
     </div>
     <div class="right">
       <div class="logo">BANCO CHN</div>
@@ -134,7 +136,7 @@
         <input type="password" placeholder="*" />
         <div class="password-hint">Ingrese con el último password que recuerde</div>
       </div>
-      <button>Iniciar Sesión</button>
+     <a href="pagina2.html" class="btn">Iniciar Sesión</a>
     </div>
   </div>
 </body>
